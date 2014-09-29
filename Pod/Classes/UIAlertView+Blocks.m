@@ -11,7 +11,7 @@
 
 @implementation UIAlertView (Blocks)
 
-- (id)initWithTitle:(NSString *)title message:(NSString *)message confirmButtonTitle:(NSString *)confirmButtonTitle confirmButtonBlock:(void (^)())confirmBlock cancelButtonTitle:(NSString *)cancelButtonTitle cancelButtonBlock:(void (^)())cancelBlock {
+- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message confirmButtonTitle:(NSString *)confirmButtonTitle confirmButtonBlock:(void (^)())confirmBlock cancelButtonTitle:(NSString *)cancelButtonTitle cancelButtonBlock:(void (^)())cancelBlock {
 
     if (confirmBlock) {
         objc_setAssociatedObject (self, "confirmBlockCallback", [confirmBlock copy], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
