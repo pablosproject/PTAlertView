@@ -1,0 +1,4 @@
+target 'PTAlertView', :exclusive => true do
+  pod "PTAlertView", :path => "../"
+end
+
