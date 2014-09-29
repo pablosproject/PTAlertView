@@ -7,6 +7,7 @@
 //
 
 #import "PTViewController.h"
+#import <UIAlertView+Blocks.h>
 
 @interface PTViewController ()
 
@@ -24,6 +25,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)testAlert:(id)sender {
+ 
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                    message:@"This is a test with block"
+                                         confirmButtonTitle:@"Ok"
+                                         confirmButtonBlock:^{
+                                             NSLog(@"Confirmation pressed");
+                                         }
+                                          cancelButtonTitle:@"Cancel"
+                                          cancelButtonBlock:^{
+                                              NSLog(@"Cancel pressed");
+                                          }];
+    [alert show];
 }
 
 @end
