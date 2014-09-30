@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/PTAlertView.svg?style=flat)](http://cocoadocs.org/docsets/PTAlertView)
 [![Platform](https://img.shields.io/cocoapods/p/PTAlertView.svg?style=flat)](http://cocoadocs.org/docsets/PTAlertView)
 
-This is a simple category of UIAlertView that simplofy the basic usage of alerts with blocks. It uses *AssociatedObject* to handle delegate's method.
+This is a simple category of UIAlertView that simplify the basic usage of alerts with blocks. It uses *AssociatedObject* to handle delegate's method.
 
 ## Usage
 
@@ -12,7 +12,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ##Example
 
-You could use the category by importing it and instantiate a new alert with the provided initialization method that takes the titles of the confirmation and cancel buttons and a block for every case.  
+You could use the category by importing it and instantiate a new alert with the provided initialization method.    
+This method takes the titles of the confirmation and cancel buttons and a block for every case.  
 If you **not** provide a title for the cancel button, the alert will only show the confirmation button.
 ```objective-c
 #import <UIAlertView+Blocks.h>
